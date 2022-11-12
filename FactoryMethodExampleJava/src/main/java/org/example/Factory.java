@@ -7,7 +7,7 @@ public class Factory {
         switch (serType){
             case "JSON":
                 return new JSONCreator();
-            case "XML":
+            case "ASCII":
                 return new XMLCreator();
             default:
                 throw new IllegalArgumentException("Unknown Serialization"+serType);
